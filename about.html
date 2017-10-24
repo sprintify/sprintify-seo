@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Text</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:200,300,500,700|Nunito+Sans:300,400,800,900" rel="stylesheet">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="sass/main.css">
+        
+        <!-- js -->
+        <script src="js/classie.js"></script>
+        <script>
+            function init() {
+                window.addEventListener('scroll', function(e){
+                    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                        shrinkOn = 300,
+                        header = document.querySelector("header");
+                    if (distanceY > shrinkOn) {
+                        classie.add(header,"smaller");
+                    } else {
+                        if (classie.has(header,"smaller")) {
+                            classie.remove(header,"smaller");
+                        }
+                    }
+                });
+            }
+            window.onload = init();
+        </script>
+    </head>
+    
+    <body>
+        <header class="container-heading">
+            <div class="wrapper heading">
+                <nav>
+                    <div class="logo heading">Sprintify | <span>faster web</span></div>
+                    <ul>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="about.html">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#"><span class="nav-getstarted">Get started</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            
+        </main>
+
+        <footer>
+            <div class="wrapper">
+                <nav>
+                    <div class="logo">Sprintify | <span>faster web</span></div>
+                    <ul>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Get started</a></li>
+                    </ul>
+                </nav>
+            </div>            
+        </footer>
+    </body>
+</html>
