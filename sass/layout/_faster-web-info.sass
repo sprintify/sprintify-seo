@@ -8,7 +8,7 @@
   margin: 0 auto
 
 .wrapper-form
-   max-width: 750px
+   max-width: 900px
    margin: 0 auto
 
 .fa-paper-plane
@@ -21,20 +21,21 @@
 .space
   padding: 10px 0
 
-.wrapper
+
+//.wrapper
   width: 100%
   margin: 0 auto
 
-input
+//input
   outline: none
   border: none
 
-form
+//form
   position: relative
   box-sizing: border-box
 
 
-.form-url
+//.form-url
   padding: 20px 0px 20px 30px
   font-size: 24px
   line-height: 1.7em
@@ -47,7 +48,7 @@ form
   width: 100%
   font-family: 'Encode Sans Expanded', sans-serif
 
-.form-submit
+//.form-submit
   position: absolute
   top: 1px
   right: -2px
@@ -65,3 +66,50 @@ form
   text-decoration: none
   max-width: 100%
   white-space: normal
+
+
+
+form
+  font-family: $font-stack
+  font-size: 10px
+  padding-top: 44px
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+
+input, textarea, .button
+  box-sizing: border-box
+  width: 80%
+  flex: 0 0 100%
+  padding: 16px
+  border-radius: 5px
+  margin: 0 auto
+  margin-bottom: 15px
+  border: none
+  font-family: $font-stack
+  font-weight: $font-light
+  font-size: 15px
+
+input, textarea, .button a:focus
+  outline: none
+  border: none
+
+textarea
+  height: 14em
+  resize: vertical
+
+.button
+  width: 150px
+  border-radius: 5px
+  margin: 0 auto
+  background-color: $primary
+  color: $white
+  font-size: 18px
+  text-transform: uppercase
+  font-family: $font-stack
+  font-weight: $font-bold
+  transtion: all 250ms ease-in-out
+  cursor: pointer
+
+  &:hover
+    background-color: $secondary
