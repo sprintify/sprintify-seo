@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background: #eee;
+  background-color: #ececed;
   font-family: 'Encode Sans Expanded', sans-serif;
   margin: 0;
   padding: 0;
@@ -24,7 +24,7 @@ body {
   line-height: 1.6;
   text-align: center;
   font-weight: 300;
-  color: #43464b;
+  color: #444b57;
   letter-spacing: -.5px;
 }
 
@@ -44,11 +44,53 @@ body {
   text-align: center;
   font-weight: 200;
   letter-spacing: -1px;
-  color: #43464b;
+  color: #444b57;
 }
 
 .title-large span {
   font-weight: 700;
+}
+
+input:-webkit-autofill {
+  border: solid #ececed 2px;
+  -webkit-text-fill-color: #444b57;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill:hover, input:-webkit-autofill:focus input:-webkit-autofill {
+  border: solid #ececed 2px;
+  -webkit-text-fill-color: #444b57;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+textarea:-webkit-autofill {
+  border: solid #ececed 2px;
+  -webkit-text-fill-color: #444b57;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus {
+  border: solid #ececed 2px;
+  -webkit-text-fill-color: #444b57;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+select:-webkit-autofill {
+  border: solid #ececed 2px;
+  -webkit-text-fill-color: #444b57;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+select:-webkit-autofill:hover, select:-webkit-autofill:focus {
+  border: solid #ececed 2px;
+  -webkit-text-fill-color: #444b57;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .wrapper.heading {
@@ -291,10 +333,10 @@ form {
   padding: 20px 0px 20px 30px;
   font-size: 24px;
   line-height: 1.7em;
-  border: solid #e5e5e6 2px;
+  border: solid #ececed 2px;
   border-radius: 2em;
-  background: #fff;
-  color: #43464b;
+  background-color: #fff;
+  color: #444b57;
   font-weight: 300;
   display: -webkit-flex;
   display: -ms-flexbox;
