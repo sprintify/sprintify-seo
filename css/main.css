@@ -19,6 +19,23 @@ body {
   border: 0;
 }
 
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.text-primary {
+  font-family: "Encode Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: left;
+  font-weight: 400;
+  color: #444b57;
+  letter-spacing: .2px;
+  word-spacing: 1.2px;
+}
+
 .title-small {
   font-size: 1.5vw;
   line-height: 1.6;
