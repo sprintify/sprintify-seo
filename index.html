@@ -6,12 +6,81 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:200,300,500,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Encode+Sans:300,400" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="css/main.css">
 
-        <!-- js -->
-        <script src="js/classie.js"></script>
+        <!-- js classie.js inline-->
+        <script>
+
+        ( function( window ) {
+
+        'use strict';
+
+        // class helper functions from bonzo https://github.com/ded/bonzo
+
+        function classReg( className ) {
+          return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+        }
+
+        // classList support for class management
+        // altho to be fair, the api sucks because it won't accept multiple classes at once
+        var hasClass, addClass, removeClass;
+
+        if ( 'classList' in document.documentElement ) {
+          hasClass = function( elem, c ) {
+            return elem.classList.contains( c );
+          };
+          addClass = function( elem, c ) {
+            elem.classList.add( c );
+          };
+          removeClass = function( elem, c ) {
+            elem.classList.remove( c );
+          };
+        }
+        else {
+          hasClass = function( elem, c ) {
+            return classReg( c ).test( elem.className );
+          };
+          addClass = function( elem, c ) {
+            if ( !hasClass( elem, c ) ) {
+              elem.className = elem.className + ' ' + c;
+            }
+          };
+          removeClass = function( elem, c ) {
+            elem.className = elem.className.replace( classReg( c ), ' ' );
+          };
+        }
+
+        function toggleClass( elem, c ) {
+          var fn = hasClass( elem, c ) ? removeClass : addClass;
+          fn( elem, c );
+        }
+
+        var classie = {
+          // full names
+          hasClass: hasClass,
+          addClass: addClass,
+          removeClass: removeClass,
+          toggleClass: toggleClass,
+          // short names
+          has: hasClass,
+          add: addClass,
+          remove: removeClass,
+          toggle: toggleClass
+        };
+
+        // transport
+        if ( typeof define === 'function' && define.amd ) {
+          // AMD
+          define( classie );
+        } else {
+          // browser global
+          window.classie = classie;
+        }
+
+        })( window );
+
+        </script>
+
         <script>
             function init() {
                 window.addEventListener('scroll', function(e){
@@ -56,17 +125,19 @@
                   <br>
                   <br>
                   <br>
-
                   <p class="text-primary">We take advantage of Content Delivery Network world wide. Usage of CDN makes websites physically closer to customer and give best load speed and performance.</p>
+
                   <p>We create modern static sites with superspeed. On top it is safer as we impliment https all this will help your site in search engines like Google Bing etc.</p>
                   <p>Is your site slow?</p>
 						<p>Then you have come to the right place !!!</p><p>Modern sites are faster and safer. We deliver https that</p>
                   <p>Do you need a website that is fast as lightspeed?</p>
 						<p>Then you have come to the right place </p>
 
-
-
-
+                  <p>What can CDN do for you?</p>
+                  <p>Increase page load speed</p>
+                  <p>Block spammers</p>
+                  <p>Secure your website</p>
+                  <p>Protec</p>
 
                </div>
             </div>
