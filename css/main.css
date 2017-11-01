@@ -384,7 +384,7 @@ textarea {
   font-size: 18px;
   text-transform: uppercase;
   font-family: "Encode Sans Expanded", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   transtion: all 250ms ease-in-out;
   cursor: pointer;
 }
