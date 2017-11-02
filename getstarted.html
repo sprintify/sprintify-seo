@@ -8,16 +8,125 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 	<link rel="stylesheet" href="css/main.css">
 
-	<!-- Speed up fontawesome cause its so slow-->
+	<!-- Speed up fontawesome cause its so slow -->
 	<script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
 
+	<!-- js classie.js inline-->
+	<script>
+
+	( function( window ) {
+
+	'use strict';
+
+	// class helper functions from bonzo https://github.com/ded/bonzo
+
+	function classReg( className ) {
+	  return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+	}
+
+	// classList support for class management
+	// altho to be fair, the api sucks because it won't accept multiple classes at once
+	var hasClass, addClass, removeClass;
+
+	if ( 'classList' in document.documentElement ) {
+	  hasClass = function( elem, c ) {
+		 return elem.classList.contains( c );
+	  };
+	  addClass = function( elem, c ) {
+		 elem.classList.add( c );
+	  };
+	  removeClass = function( elem, c ) {
+		 elem.classList.remove( c );
+	  };
+	}
+	else {
+	  hasClass = function( elem, c ) {
+		 return classReg( c ).test( elem.className );
+	  };
+	  addClass = function( elem, c ) {
+		 if ( !hasClass( elem, c ) ) {
+			elem.className = elem.className + ' ' + c;
+		 }
+	  };
+	  removeClass = function( elem, c ) {
+		 elem.className = elem.className.replace( classReg( c ), ' ' );
+	  };
+	}
+
+	function toggleClass( elem, c ) {
+	  var fn = hasClass( elem, c ) ? removeClass : addClass;
+	  fn( elem, c );
+	}
+
+	var classie = {
+	  // full names
+	  hasClass: hasClass,
+	  addClass: addClass,
+	  removeClass: removeClass,
+	  toggleClass: toggleClass,
+	  // short names
+	  has: hasClass,
+	  add: addClass,
+	  remove: removeClass,
+	  toggle: toggleClass
+	};
+
+	// transport
+	if ( typeof define === 'function' && define.amd ) {
+	  // AMD
+	  define( classie );
+	} else {
+	  // browser global
+	  window.classie = classie;
+	}
+
+	})( window );
+
+	</script>
+
+	<script>
+		 function init() {
+			  window.addEventListener('scroll', function(e){
+					var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+						 shrinkOn = 150,
+						 header = document.querySelector("header");
+					if (distanceY > shrinkOn) {
+						 classie.add(header,"smaller");
+					} else {
+						 if (classie.has(header,"smaller")) {
+							  classie.remove(header,"smaller");
+						 }
+					}
+			  });
+		 }
+		 window.onload = init();
+	</script>
+
 </head>
+
+
+<body class="body-getstarted">
+<header class="container heading getstarted-header">
+	 <div class="wrapper heading">
+		  <nav class="nav-primary getstarted-nav">
+			   <div class="logo heading getstarted-logo">Sprintify <span>|</span> site</div>
+			   <ul class="ul-nav-primary getstarted-ul">
+					 <li class="li-nav-primary getstarted-li"><a class="a-nav-primary getstarted-a" href="index.html">About</a></li>
+					 <li class="li-nav-primary getstarted-li"><a class="a-nav-primary getstarted-a" href="about.html">News</a></li>
+					 <li class="li-nav-primary getstarted-li"><a class="a-nav-primary getstarted-a" href="#">Contact</a></li>
+					 <li class="li-nav-primary getstarted-li"><a class="a-nav-primary getstarted-a" href="#">Blog</a></li>
+					 <li class="li-nav-primary getstarted-li"><a class="a-nav-primary getstarted-a" href="getstarted.html"><span class="primary secondary">Get started</span></a></li>
+			   </ul>
+		  </nav>
+	 </div>
+</header>
+
 <body>
-   <div class="container-email">
+   <div class="container-getstarted">
         <div class="wrapper">
-            <h2 class="title-medium">Sprintify</h2>
+            <h2 class="title-medium getstartedhead">Sprintify</h2>
             <h2><i class="fa fa-paper-plane" aria-hidden="true"></i></h2>
-            <h1 class="title-large">Do you want <span>faster web</span>?</h1>
+            <h1 class="title-large color center">Do you want <span>faster web</span>?</h1>
             <h3 class="title-small">Hey, I'm Nike Parker and I make superfast websites.<br> My question is, will it be yours?</h3>
             <div class="space"></div>
 			</div>

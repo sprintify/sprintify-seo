@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Sprintify site</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:200,300,700">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
         <link rel="stylesheet" href="css/main.css">
@@ -86,7 +87,7 @@
             function init() {
                 window.addEventListener('scroll', function(e){
                     var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                        shrinkOn = 300,
+                        shrinkOn = 150,
                         header = document.querySelector("header");
                     if (distanceY > shrinkOn) {
                         classie.add(header,"smaller");
@@ -105,40 +106,45 @@
         <header class="container-heading">
             <div class="wrapper heading">
                 <nav class="nav-primary">
-                    <div class="logo heading">Sprintify | <span>faster web</span></div>
+                    <div class="logo heading">Sprintify <span>|</span> site</div>
                     <ul class="ul-nav-primary">
                         <li class="li-nav-primary"><a class="a-nav-primary" href="index.html">About</a></li>
                         <li class="li-nav-primary"><a class="a-nav-primary" href="about.html">News</a></li>
                         <li class="li-nav-primary"><a class="a-nav-primary" href="#">Contact</a></li>
                         <li class="li-nav-primary"><a class="a-nav-primary" href="#">Blog</a></li>
-                        <li class="li-nav-primary"><a class="a-nav-primary" href="getstarted.html"><span class="nav-getstarted">Get started</span></a></li>
+                        <li class="li-nav-primary"><a class="a-nav-primary" href="getstarted.html"><span class="primary secondary">Get started</span></a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-         <section class="faster-web-how">
+         <section class="container">
             <div class="wrapper">
-               <div class="text-primary">
+               <div class="box-index">
+
                   <br>
                   <br>
                   <br>
                   <br>
                   <br>
-                  <br>
+                  <h1 class="title-large color">Do you want <span>more traffic</span> and <span>faster</span> site?</h1>
+                  <p class="text-primary">So whats the deal here? Faster site means more cash as viewer spending more time at your site.</p>
+                  <p class="text-primary">How to make your site load faster on web?</p>
+
                   <p class="text-primary">We take advantage of Content Delivery Network world wide. Usage of CDN makes websites physically closer to customer and give best load speed and performance.</p>
 
-                  <p>We create modern static sites with superspeed. On top it is safer as we impliment https all this will help your site in search engines like Google Bing etc.</p>
-                  <p>Is your site slow?</p>
-						<p>Then you have come to the right place !!!</p><p>Modern sites are faster and safer. We deliver https that</p>
-                  <p>Do you need a website that is fast as lightspeed?</p>
-						<p>Then you have come to the right place </p>
+                  <p class="text-primary">We create modern static sites with superspeed. On top it is safer as we impliment https all this will help your site in search engines like Google Bing etc.</p>
+                  <p class="text-primary">Is your site slow?</p>
+						<p class="text-primary">Then you have come to the right place !!!</p><p>Modern sites are faster and safer. We deliver https that</p>
+                  <p class="text-primary">Do you need a website that is fast as lightspeed?</p>
+						<p class="text-primary">Then you have come to the right place </p>
 
-                  <p>What can CDN do for you?</p>
-                  <p>Increase page load speed</p>
-                  <p>Block spammers</p>
-                  <p>Secure your website</p>
-                  <p>Protec</p>
+                  <p class="text-primary">What can CDN do for you?</p>
+                  <p class="text-primary">Increase page load speed</p>
+                  <p class="text-primary">Block spammers</p>
+                  <p class="text-primary">Secure your website</p>
+
+
 
                </div>
             </div>
