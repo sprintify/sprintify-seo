@@ -425,8 +425,13 @@ h2 .fa-paper-plane {
   color: #fa6a39;
 }
 
-h1.title-large.center {
+h1.getstarted-large {
+  font-size: 4vw;
   text-align: center;
+}
+
+h1.getstarted-large span {
+  color: #fa6a39;
 }
 
 form {
