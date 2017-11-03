@@ -14,7 +14,7 @@
             function init() {
                 window.addEventListener('scroll', function(e){
                     var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                        shrinkOn = 300,
+                        shrinkOn = 50,
                         header = document.querySelector("header");
                     if (distanceY > shrinkOn) {
                         classie.add(header,"smaller");
@@ -30,31 +30,30 @@
     </head>
 
     <body>
-        <header class="container-heading">
-            <div class="wrapper heading">
-                <nav class="nav-primary">
-                    <div class="logo heading">Sprintify | <span>site</span></div>
-                    <ul class="ul-nav-primary">
-                        <li class="li-nav-primary"><a class="a-nav-primary" href="index.html">About</a></li>
-                        <li class="li-nav-primary"><a class="a-nav-primary" href="about.html">News</a></li>
-                        <li class="li-nav-primary"><a class="a-nav-primary" href="#">Contact</a></li>
-                        <li class="li-nav-primary"><a class="a-nav-primary" href="#">Blog</a></li>
-                        <li class="li-nav-primary"><a class="a-nav-primary" href="getstarted.html"><span class="nav-getstarted">Get started</span></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+      <header class="container-heading-news">
+           <div class="wrapper heading">
+               <nav class="nav-primary">
+                   <div class="logo heading">Sprintify <span>|</span> site</div>
+                   <ul class="ul-nav-primary">
+                       <li class="li-nav-primary"><a class="a-nav-primary" href="index.html">About</a></li>
+                       <li class="li-nav-primary"><a class="a-nav-primary" href="news.html">News</a></li>
+                       <li class="li-nav-primary"><a class="a-nav-primary" href="#">Contact</a></li>
+                       <li class="li-nav-primary"><a class="a-nav-primary" href="#">Blog</a></li>
+                       <li class="li-nav-primary"><a class="a-nav-primary" href="getstarted.html"><span class="primary secondary">Get started</span></a></li>
+                   </ul>
+               </nav>
+           </div>
+      </header>
 
-         <section class="faster-web-how">
+         <section class="container-news">
             <div class="wrapper">
                <div class="text-primary">
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-
+                  <h1 class="title-large">Display: <span>Grid</span></h1>
+                  <h1 class="title-large">Display: <span>Grid</span></h1>
+                  <h1 class="title-large">Display: <span>Grid</span></h1>
+                  <h1 class="title-large">Display: <span>Grid</span></h1>
+                  <h1 class="title-large">Display: <span>Grid</span></h1>
+                  <h1 class="title-large">Display: <span>Grid</span></h1>
                   <p class="text-primary">We take advantage of Content Delivery Network world wide. Usage of CDN makes websites physically nearer to customer and give best load speed and performance.</p>
 
 

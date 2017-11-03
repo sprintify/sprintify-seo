@@ -87,7 +87,7 @@
             function init() {
                 window.addEventListener('scroll', function(e){
                     var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                        shrinkOn = 150,
+                        shrinkOn = 50,
                         header = document.querySelector("header");
                     if (distanceY > shrinkOn) {
                         classie.add(header,"smaller");
@@ -109,7 +109,7 @@
                     <div class="logo heading">Sprintify <span>|</span> site</div>
                     <ul class="ul-nav-primary">
                         <li class="li-nav-primary"><a class="a-nav-primary" href="index.html">About</a></li>
-                        <li class="li-nav-primary"><a class="a-nav-primary" href="about.html">News</a></li>
+                        <li class="li-nav-primary"><a class="a-nav-primary" href="news.html">News</a></li>
                         <li class="li-nav-primary"><a class="a-nav-primary" href="#">Contact</a></li>
                         <li class="li-nav-primary"><a class="a-nav-primary" href="#">Blog</a></li>
                         <li class="li-nav-primary"><a class="a-nav-primary" href="getstarted.html"><span class="primary secondary">Get started</span></a></li>
