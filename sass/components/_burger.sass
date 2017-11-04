@@ -1,0 +1,55 @@
+/* styling menu icon for dropdown
+.header .menu
+  clear: both
+  max-height: 0
+  transition: max-height .5s ease-out
+  letter-spacing: 2px
+
+.header
+  .menu-icon
+    cursor: pointer
+    float: right
+    padding: 25.5px 20px
+    position: absolute
+    top: -3px
+    right: 0
+    user-select: none
+    .navicon
+      background: #E84545
+      display: block
+      height: 3px
+      position: relative
+      transition: background .2s ease-out
+      width: 30px
+      &:before, &:after
+        background: #E84545
+        content: ''
+        display: block
+        height: 100%
+        position: absolute
+        transition: all .25s ease-out
+        width: 100%
+      &:before
+        top: 8px
+      &:after
+        top: -8px
+  .menu-btn
+    display: none
+    &:checked ~
+      .menu
+        max-height: 260px
+      .menu-icon
+        .navicon
+          background: transparent
+          &:before
+            transform: rotate(-45deg)
+          &:after
+            transform: rotate(45deg)
+        &:not(.steps) .navicon
+          &:before, &:after
+            top: 0
+
+
+@media screen and (min-width: 768px)
+   .header .menu-icon
+     display: none
