@@ -1,5 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
-/*$secondary: rgba(105, 211, 24, 1) */
+/*$secondary: rgba(105, 211, 24, 1)  rgba(68, 75, 87, 1)*/
 /* rgba(179, 185, 171, 1)  #16222a #0E111B */
 h1, h2, h3, h4, h5, h6, p {
   margin: 0 0 .75em;
@@ -35,11 +35,11 @@ body {
 
 .text-primary {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.6vw;
-  line-height: 1.8;
+  font-size: 18px;
+  line-height: 1.6;
   text-align: left;
   font-weight: 400;
-  color: #444b57;
+  color: #35363e;
   letter-spacing: -.25px;
   word-spacing: .5px;
 }
@@ -50,7 +50,7 @@ body {
   line-height: 1.6;
   text-align: center;
   font-weight: 300;
-  color: #444b57;
+  color: #35363e;
   letter-spacing: -.5px;
 }
 
@@ -62,16 +62,16 @@ body {
   font-size: 3.5vw;
   text-align: left;
   font-weight: 200;
-  color: #444b57;
+  color: #35363e;
 }
 
 .title-large {
   font-family: "Encode Sans Expanded", sans-serif;
-  font-size: 6vw;
+  font-size: 80em;
   text-align: left;
   font-weight: 200;
   letter-spacing: -1px;
-  color: #444b57;
+  color: #35363e;
   line-height: 1.2;
 }
 
@@ -102,7 +102,7 @@ body {
 }
 
 .header .menu-icon .navicon {
-  background: #E84545;
+  background: #fff;
   display: block;
   height: 3px;
   position: relative;
@@ -111,7 +111,7 @@ body {
 }
 
 .header .menu-icon .navicon:before, .header .menu-icon .navicon:after {
-  background: #E84545;
+  background: #fff;
   content: '';
   display: block;
   height: 100%;
@@ -164,58 +164,58 @@ body {
 
 input:-webkit-autofill {
   border: solid #ececed 2px;
-  -webkit-text-fill-color: #444b57;
+  -webkit-text-fill-color: #35363e;
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 
 input:-webkit-autofill:hover, input:-webkit-autofill:focus input:-webkit-autofill {
   border: solid #ececed 2px;
-  -webkit-text-fill-color: #444b57;
+  -webkit-text-fill-color: #35363e;
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 
 textarea:-webkit-autofill {
   border: solid #ececed 2px;
-  -webkit-text-fill-color: #444b57;
+  -webkit-text-fill-color: #35363e;
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 
 textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus {
   border: solid #ececed 2px;
-  -webkit-text-fill-color: #444b57;
+  -webkit-text-fill-color: #35363e;
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 
 select:-webkit-autofill {
   border: solid #ececed 2px;
-  -webkit-text-fill-color: #444b57;
+  -webkit-text-fill-color: #35363e;
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 
 select:-webkit-autofill:hover, select:-webkit-autofill:focus {
   border: solid #ececed 2px;
-  -webkit-text-fill-color: #444b57;
+  -webkit-text-fill-color: #35363e;
   -webkit-box-shadow: 0 0 0px 1000px #000 inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 
-.container-mobile {
-  background-color: #fff;
+header.container-heading {
+  background-color: #fa6a39;
   width: 100%;
   height: 50px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
-  opacity: .97;
+  opacity: 1;
   margin: 0;
   padding: 0;
-  box-shadow: 0px 0px 6px rgba(68, 75, 87, 0.4);
+  box-shadow: 0px 0px 6px rgba(53, 54, 62, 0.4);
 }
 
 .wrapper.heading {
@@ -226,30 +226,24 @@ select:-webkit-autofill:hover, select:-webkit-autofill:focus {
 .logo.heading {
   font-family: "Encode Sans Expanded", sans-serif;
   letter-spacing: 1px;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  color: #fa6a39;
+  color: #fff;
   height: 50px;
   font-weight: 200;
   font-size: 24px;
   padding: 4px  20px 20px;
 }
 
-.logo.heading span {
-  font-weight: 200;
-}
-
 .ul-nav-primary {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  list-style-type: none;
   overflow: hidden;
-  background-color: #fa6a39;
+  background-color: #41424c;
 }
 
 .li-nav-primary {
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid #b4b5be;
 }
 
 .li-nav-primary:last-child {
@@ -260,90 +254,19 @@ select:-webkit-autofill:hover, select:-webkit-autofill:focus {
   line-height: 42px;
   text-decoration: none;
   color: #fff;
-  font-weight: 300;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 14px;
   text-align: center;
   display: block;
   border-bottom: #fff;
+  text-transform: uppercase;
+}
+
+.a-nav-primary:hover {
+  background-color: #585a67;
 }
 
 /* ===== FORMS getstarted with different navigation======= */
-header.getstarted-header {
-  background-color: #fff;
-  width: 100%;
-  height: 50px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  opacity: .97;
-  margin: 0;
-  padding: 0;
-  box-shadow: 0px 0px 6px rgba(68, 75, 87, 0.4);
-}
-
-div.getstarted-logo {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  margin-top: 0;
-  color: #fff;
-  width: 250px;
-  height: 50px;
-  font-weight: 200;
-  font-size: 24px;
-  transition: all 0.4s;
-}
-
-div.getstarted-logo span {
-  font-weight: 200;
-  color: #fa6a39;
-}
-
-.getstarted-nav {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.getstarted-ul {
-  -webkit-flex: 2 1 auto;
-  -ms-flex: 2 1 auto;
-  flex: 2 1 auto;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #fa6a39;
-}
-
-.getstarted-li {
-  border-bottom: 1px solid #fff;
-}
-
-.getstarted-li:last-child {
-  border-bottom: none;
-}
-
-.getstarted-a {
-  line-height: 42px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 300;
-  font-size: 15px;
-  text-align: center;
-  display: block;
-  border-bottom: #fff;
-}
-
 /* ======================================================================
    @mixin ==================== MEDIA QUIERIES =================================
    @mixin ===================================================================== */
@@ -352,32 +275,19 @@ div.getstarted-logo span {
     display: none;
   }
   header.container-heading {
-    background-color: #fa6a39;
-    width: 100%;
     height: 100px;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
     transition: height 0.4s;
   }
-  header.container-heading .logo {
+  header.container-heading .logo.heading {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     margin-top: -3px;
-    color: #fff;
     line-height: 100px;
     height: 100px;
     width: 300px;
-    font-weight: 200;
     font-size: 40px;
     transition: all 0.4s;
-  }
-  header.container-heading .logo span {
-    font-weight: 200;
-    color: #fff;
   }
   .nav-primary {
     display: -webkit-flex;
@@ -403,18 +313,20 @@ div.getstarted-logo span {
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    list-style-type: none;
     margin-top: -5px;
     background-color: #fa6a39;
   }
   .li-nav-primary {
-    padding: 5px 0px;
+    padding: 5px 0;
+    border-bottom: none;
+  }
+  .li-nav-primary {
     border-bottom: none;
   }
   .li-nav-primary:nth-child(1), .li-nav-primary:nth-child(2), .li-nav-primary:nth-child(3), .li-nav-primary:nth-child(4) {
-    -webkit-flex-basis: 65px;
-    -ms-flex-preferred-size: 65px;
-    flex-basis: 65px;
+    -webkit-flex-basis: 80px;
+    -ms-flex-preferred-size: 80px;
+    flex-basis: 80px;
   }
   .li-nav-primary:nth-child(5) {
     -webkit-flex-basis: 140px;
@@ -423,13 +335,13 @@ div.getstarted-logo span {
   }
   .a-nav-primary {
     line-height: 100px;
-    text-decoration: none;
-    color: #fff;
     font-weight: 300;
-    font-size: 15px;
-    text-align: center;
-    display: block;
+    letter-spacing: .5px;
     transition: all 0.4s;
+    text-transform: none;
+  }
+  .a-nav-primary:hover {
+    background-color: #fa6a39;
   }
   span.secondary {
     border: 1px solid #fff;
@@ -442,7 +354,7 @@ div.getstarted-logo span {
     height: 50px;
     background-color: #fff;
     opacity: .97;
-    box-shadow: 0px 0px 6px rgba(68, 75, 87, 0.4);
+    box-shadow: 0px 0px 6px rgba(53, 54, 62, 0.4);
   }
   header.smaller .logo.heading {
     width: 190px;
@@ -450,6 +362,7 @@ div.getstarted-logo span {
     line-height: 50px;
     font-size: 24px;
     margin-top: -2px;
+    color: #fa6a39;
   }
   header.smaller .logo.heading span {
     color: #fa6a39;
@@ -461,68 +374,7 @@ div.getstarted-logo span {
     margin-top: 0px;
     line-height: 50px;
     background-color: #fff;
-  }
-  header.smaller .primary {
-    border: 1px solid #fa6a39;
-    padding: 2px  10px 3px 10px;
-  }
-  /* Header getstarted fixed  =========================================== */
-  header.getstarted-header {
-    margin: 0;
-    padding: 0;
-    background-color: #fa6a39;
-    width: 100%;
-    height: 50px;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    transition: height 0.4s;
-  }
-  header.getstarted-header .getstarted-logo {
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    margin-top: 30px;
-    color: #fff;
-    width: 200px;
-    height: 50px;
-    font-weight: 200;
-    font-size: 24px;
-    transition: all 0.4s;
-  }
-  header.getstarted-header .getstarted-logo span {
-    font-weight: 200;
-  }
-  .getstarted-nav {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: -26px;
-  }
-  span.secondary {
-    border: 1px solid #fff;
-    padding: 2px  10px 3px 10px;
-  }
-  /* Nav turn to white  ============================================ */
-  header.smaller.getstarted-header {
-    height: 50px;
-    background-color: #fff;
-    box-shadow: 0px 0px 6px rgba(68, 75, 87, 0.4);
-  }
-  header.smaller .logo.heading {
-    width: 190px;
-    height: 50px;
     color: #fa6a39;
-  }
-  header.smaller .a-nav-primary {
-    line-height: 50px;
-    color: #fa6a39;
-  }
-  header.smaller .getstarted-nav {
-    margin-top: 0px;
-    transition: height 0.4s;
   }
   header.smaller .primary {
     border: 1px solid #fa6a39;
@@ -622,7 +474,7 @@ footer {
 
 h2 .fa-paper-plane {
   color: #fa6a39;
-  font-size: 3.5vw;
+  font-size: 35px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -639,23 +491,31 @@ h2 .fa-paper-plane {
 
 .getstartedhead {
   font-family: "Encode Sans Expanded", sans-serif;
-  margin-top: 8vh;
+  margin-top: 6vh;
   margin-bottom: -10px;
   padding: 10px;
   letter-spacing: -2px;
-  font-size: 6.5vw;
+  font-size: 70px;
   text-align: center;
   font-weight: 200;
   color: #fa6a39;
 }
 
 h1.getstarted-large {
-  font-size: 4vw;
+  font-size: 42px;
   text-align: center;
 }
 
 h1.getstarted-large span {
   color: #fa6a39;
+}
+
+.body-getstarted .title-small {
+  font-size: 20px;
+  padding: 0 18px;
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 form {
@@ -714,23 +574,59 @@ textarea {
 }
 
 .button:hover {
-  background-color: #444b57;
+  background-color: #35363e;
+}
+
+@media screen and (min-width: 768px) {
+  h2 .fa-paper-plane {
+    font-size: 3.5vw;
+  }
+  .getstartedhead {
+    margin-top: 12vh;
+    font-size: 6.5vw;
+  }
+  .body-getstarted .title-small {
+    font-size: 24px;
+  }
+  h1.getstarted-large {
+    font-size: 4vw;
+  }
 }
 
 .container {
   font: "Open Sans", sans-serif;
   background-color: #fff;
-  margin-top: 5vmin;
-}
-
-.box-index {
+  margin-top: 15vw;
   padding: 0 20px;
 }
 
 h1.title-large.color {
+  font-size: 40px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 h1.title-large.color span {
   color: #fa6a39;
+}
+
+.text-primary {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    font: "Open Sans", sans-serif;
+    background-color: #fff;
+    margin-top: 150px;
+  }
+  .box-index {
+    padding: 0 20px;
+  }
+  h1.title-large.color {
+    font-size: 70px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  h1.title-large.color span {
+    color: #fa6a39;
+  }
 }

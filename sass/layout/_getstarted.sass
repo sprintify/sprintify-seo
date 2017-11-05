@@ -13,7 +13,7 @@
 
 h2 .fa-paper-plane
   color: $primary
-  font-size: 3.5vw
+  font-size: 35px
   display: flex
   justify-content: center
   text-align: center
@@ -24,20 +24,28 @@ h2 .fa-paper-plane
 
 .getstartedhead
    font-family: $font-stack
-   margin-top: 8vh
+   margin-top: 6vh
    margin-bottom: -10px
    padding: 10px
    letter-spacing: -2px
-   font-size: 6.5vw
+   font-size: 70px
    text-align: center
    font-weight: $font-light
    color: $primary
 
 h1.getstarted-large
-   font-size: 4vw
+   font-size: 42px
    text-align: center
    span
       color: $primary
+
+.body-getstarted .title-small
+   font-size: 20px
+   padding: 0 18px
+   width: 80%
+   max-width: 900px
+   margin: 0 auto
+
 form
   font-family: $font-stack
   font-size: 10px
@@ -82,3 +90,18 @@ textarea
 
   &:hover
     background-color: $secondary
+
+@media screen and (min-width: 768px)
+
+   h2 .fa-paper-plane
+     font-size: 3.5vw
+
+   .getstartedhead
+      margin-top: 12vh
+      font-size: 6.5vw
+
+   .body-getstarted .title-small
+      font-size: 24px
+
+   h1.getstarted-large
+      font-size: 4vw

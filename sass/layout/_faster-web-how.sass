@@ -1,12 +1,33 @@
 .container
    font: $font2-stack
    background-color: $white
-   margin-top: 5vmin
+   margin-top: 15vw
+   padding: 0 20px
 
-.box-index
+//.box-index
    padding: 0 20px
 
 h1.title-large.color
+   font-size: 40px
    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2)
    span
       color: $primary
+
+.text-primary
+   font-size: 16px
+
+
+@media screen and (min-width: 768px)
+   .container
+      font: $font2-stack
+      background-color: $white
+      margin-top: 150px
+
+   .box-index
+      padding: 0 20px
+
+   h1.title-large.color
+      font-size: 70px
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, .2)
+      span
+         color: $primary
