@@ -229,7 +229,7 @@ header.container-heading {
   height: 50px;
   font-weight: 200;
   font-size: 24px;
-  padding: 4px 0 0 20px;
+  padding: 4px 0 0 0px;
   cursor: pointer;
 }
 
@@ -286,6 +286,7 @@ nav a {
   header.container-heading {
     height: 100px;
     transition: height 0.4s;
+    padding: 0;
   }
   header.container-heading .logo.heading {
     -webkit-flex: 1 1 auto;
@@ -313,7 +314,7 @@ nav a {
     -ms-flex-direction: row;
     flex-direction: row;
     margin-top: 0;
-    padding: 0 20px;
+    margin: 0 20px;
   }
   .ul-nav-primary {
     -webkit-flex: 2 1 auto;

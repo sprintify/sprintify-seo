@@ -15,6 +15,17 @@ header.container-heading
    max-width: 960px
    margin: 0 auto
 
+//.graphic
+  background-image: url(../logo/Sprintifylogo.svg)
+  width: 65%
+  height: 65%
+  background-repeat: no-repeat
+  background-position: center left
+  padding-left: 20px
+  position: relative
+  top: 17px
+  //margin-top: 70px
+
 .logo.heading
    font-family: $font-stack
    letter-spacing: 1px
@@ -22,7 +33,7 @@ header.container-heading
    height: 50px
    font-weight: $font-light
    font-size: 24px
-   padding: 4px 0 0 20px
+   padding: 4px 0 0 0px
    cursor: pointer
    &:hover
       color: $secondary
@@ -136,6 +147,7 @@ nav a
    header.container-heading
       height: 100px
       transition: height 0.4s
+      padding: 0
 
       .logo.heading
          flex: 1 1 auto
@@ -156,7 +168,7 @@ nav a
       display: flex
       flex-direction: row
       margin-top: 0
-      padding: 0 20px
+      margin: 0 20px
 
    .ul-nav-primary
       flex: 2 1 auto
