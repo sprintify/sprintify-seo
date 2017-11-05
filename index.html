@@ -4,85 +4,10 @@
         <meta charset="UTF-8">
         <title>Sprintify site</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:200,300,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:200,400,700">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
         <link rel="stylesheet" href="css/main.css">
-
-        <!-- Speed up fontawesome cause its so slow-->
-
-        <!-- js classie.js inline-->
-        <script>
-
-        ( function( window ) {
-
-        'use strict';
-
-        // class helper functions from bonzo https://github.com/ded/bonzo
-
-        function classReg( className ) {
-          return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
-        }
-
-        // classList support for class management
-        // altho to be fair, the api sucks because it won't accept multiple classes at once
-        var hasClass, addClass, removeClass;
-
-        if ( 'classList' in document.documentElement ) {
-          hasClass = function( elem, c ) {
-            return elem.classList.contains( c );
-          };
-          addClass = function( elem, c ) {
-            elem.classList.add( c );
-          };
-          removeClass = function( elem, c ) {
-            elem.classList.remove( c );
-          };
-        }
-        else {
-          hasClass = function( elem, c ) {
-            return classReg( c ).test( elem.className );
-          };
-          addClass = function( elem, c ) {
-            if ( !hasClass( elem, c ) ) {
-              elem.className = elem.className + ' ' + c;
-            }
-          };
-          removeClass = function( elem, c ) {
-            elem.className = elem.className.replace( classReg( c ), ' ' );
-          };
-        }
-
-        function toggleClass( elem, c ) {
-          var fn = hasClass( elem, c ) ? removeClass : addClass;
-          fn( elem, c );
-        }
-
-        var classie = {
-          // full names
-          hasClass: hasClass,
-          addClass: addClass,
-          removeClass: removeClass,
-          toggleClass: toggleClass,
-          // short names
-          has: hasClass,
-          add: addClass,
-          remove: removeClass,
-          toggle: toggleClass
-        };
-
-        // transport
-        if ( typeof define === 'function' && define.amd ) {
-          // AMD
-          define( classie );
-        } else {
-          // browser global
-          window.classie = classie;
-        }
-
-        })( window );
-
-        </script>
-
+        <script src="js/classie.js" async></script>
         <script>
             function init() {
                 window.addEventListener('scroll', function(e){
@@ -106,13 +31,13 @@
         <header class="container-heading header">
             <div class="wrapper heading">
                 <nav class="nav-primary">
-                    <div class="logo heading">Sprintify <span>|</span> site</div>
+                    <a href="index.html"><div class="logo heading">Sprintify <span>|</span> site</div></a>
                     <input class="menu-btn" type="checkbox" id="menu-btn" />
                     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                     <ul class="ul-nav-primary menu">
                         <li class="li-nav-primary"><a class="a-nav-primary" href="index.html">About</a></li>
                         <li class="li-nav-primary"><a class="a-nav-primary" href="news.html">News</a></li>
-                        <li class="li-nav-primary"><a class="a-nav-primary" href="#">Contact</a></li>
+                           <li class="li-nav-primary"><a class="a-nav-primary" href="#">Contact</a></li>
                         <li class="li-nav-primary"><a class="a-nav-primary" href="#">Blog</a></li>
                         <li class="li-nav-primary"><a class="a-nav-primary" href="getstarted.html"><span class="primary secondary">Get started</span></a></li>
                     </ul>
@@ -150,13 +75,14 @@
         <footer>
             <div class="wrapper">
                 <nav>
-                    <div class="logo">Sprintify | <span>faster web</span></div>
+                   <a href="index.html">
+                    <div class="logo">Sprintify | <span>faster web</span></div></a>
                     <ul>
                         <li><a href="index.html">About</a></li>
                         <li><a href="news.html">News</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Get started</a></li>
+                        <li><a href="getstarted.html">Get started</a></li>
                     </ul>
                 </nav>
             </div>

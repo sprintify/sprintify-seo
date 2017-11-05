@@ -20,12 +20,15 @@ footer
            color: $text-inverse
            font-weight: 200
            font-size: 24px
-           span
-               font-weight: 500
+           cursor: pointer
+           width: 400px
+           &:hover
+             color: $secondary
+             text-decoration: none
 
        nav
            display: flex
-           margin-top: 0px
+           margin-top: 0
            padding: 0 20px
 
            ul
@@ -39,7 +42,8 @@ footer
                padding: 5px 0px
 
                &:nth-child(5)
-                   flex: 1 1 auto
+                   //flex: 1 1 auto
+                   flex-basis: auto
                    border: 1px solid $white
            a
                text-decoration: none
@@ -48,3 +52,6 @@ footer
                font-size: 15px
                text-align: center
                display: block
+               transition: all 250ms ease-in
+               &:hover
+                  color: $secondary

@@ -22,7 +22,13 @@ header.container-heading
    height: 50px
    font-weight: $font-light
    font-size: 24px
-   padding: 4px  20px 20px
+   padding: 4px 0 0 20px
+   cursor: pointer
+   &:hover
+      color: $secondary
+nav a
+   text-decoration: none
+   color: $white
 
 .ul-nav-primary
    list-style-type: none
@@ -136,14 +142,20 @@ header.container-heading
          margin-top: -3px
          line-height: 100px
          height: 100px
-         width: 300px
+         width: 270px
+         font-family: $font-stack
+         font-weight: $font-light
+         letter-spacing: .2px
          font-size: 40px
          transition: all 0.4s
+         padding-left: 0
+         &:hover
+            color: $secondary
 
    .nav-primary
       display: flex
       flex-direction: row
-      margin-top: 0px
+      margin-top: 0
       padding: 0 20px
 
    .ul-nav-primary
@@ -162,17 +174,19 @@ header.container-heading
    .li-nav-primary
       border-bottom: none
       &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
-         flex-basis: 80px
+         flex-basis: 70px
       &:nth-child(5)
-         flex-basis: 140px
+         flex-basis: auto
 
    .a-nav-primary
       line-height: 100px
       font-weight: $font-normal
       letter-spacing: .5px
-      transition: all 0.4s
       text-transform: none
+      text-align: center
+      transition: all 300ms ease-in
       &:hover
+         color: $secondary
          background-color: $primary
 
    span.secondary
@@ -198,14 +212,14 @@ header.container-heading
       color: $primary
       span
          color: $primary
-   header.smaller .ul-nav-primary
-      background-color: $text-inverse
 
    header.smaller .a-nav-primary
       margin-top: 0px
       line-height: 50px
-      background-color: $text-inverse
       color: $primary
+      &:hover
+         background-color: $white
+         color: $secondary
 
    header.smaller .primary
          border: 1px solid $primary
