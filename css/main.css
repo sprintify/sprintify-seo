@@ -222,6 +222,10 @@ header.container-heading {
   margin: 0 auto;
 }
 
+.nav-primary {
+  padding: 0 20px;
+}
+
 .logo.heading {
   font-family: "Encode Sans Expanded", sans-serif;
   letter-spacing: 1px;
@@ -234,12 +238,11 @@ header.container-heading {
 }
 
 .logo.heading:hover {
-  color: #35363e;
+  color: #646675;
 }
 
-nav a {
+.a-logo {
   text-decoration: none;
-  color: #fff;
 }
 
 .ul-nav-primary {
@@ -296,15 +299,10 @@ nav a {
     line-height: 100px;
     height: 100px;
     width: 270px;
-    font-family: "Encode Sans Expanded", sans-serif;
-    font-weight: 200;
     letter-spacing: .2px;
     font-size: 40px;
     transition: all 0.4s;
     padding-left: 0;
-  }
-  header.container-heading .logo.heading:hover {
-    color: #35363e;
   }
   .nav-primary {
     display: -webkit-flex;
@@ -314,7 +312,8 @@ nav a {
     -ms-flex-direction: row;
     flex-direction: row;
     margin-top: 0;
-    margin: 0 20px;
+    padding-left: 0;
+    margin-left: 20px;
   }
   .ul-nav-primary {
     -webkit-flex: 2 1 auto;
@@ -418,18 +417,19 @@ footer {
     max-width: 960px;
     margin: 0 auto;
   }
-  footer .logo {
+  footer .logo-footer {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     padding-top: 15px;
+    text-align: left;
     color: #fff;
     font-weight: 200;
     font-size: 24px;
     cursor: pointer;
     width: 400px;
   }
-  footer .logo:hover {
+  footer .logo-footer:hover {
     color: #35363e;
     text-decoration: none;
   }
@@ -439,6 +439,8 @@ footer {
     display: flex;
     margin-top: 0;
     padding: 0 20px;
+    border: 3px solid red;
+    padding-right: 20px;
   }
   footer nav ul {
     -webkit-flex: 2 1 auto;
@@ -665,6 +667,7 @@ textarea {
 h1.title-large.color {
   font-size: 40px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border: 3px solid red;
 }
 
 h1.title-large.color span {
