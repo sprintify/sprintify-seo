@@ -667,7 +667,6 @@ textarea {
 h1.title-large.color {
   font-size: 40px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  border: 3px solid red;
 }
 
 h1.title-large.color span {
