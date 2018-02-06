@@ -223,7 +223,7 @@ header.container-heading {
 }
 
 .nav-primary {
-  padding: 0 20px;
+  padding: 0;
 }
 
 .logo.heading {
@@ -233,12 +233,12 @@ header.container-heading {
   height: 50px;
   font-weight: 200;
   font-size: 24px;
-  padding: 4px 0 0 0px;
+  padding: 4px 0 0 20px;
   cursor: pointer;
 }
 
 .logo.heading:hover {
-  color: #646675;
+  color: #41424c;
 }
 
 .a-logo {
@@ -330,7 +330,7 @@ header.container-heading {
     -ms-flex-pack: end;
     justify-content: flex-end;
     margin-top: -5px;
-    background-color: #fa6a39;
+    background-color: transparent;
   }
   .li-nav-primary {
     padding: 5px 0;
