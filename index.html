@@ -18,24 +18,7 @@
         <!-- <link rel="stylesheet" href="css/main.css"> -->
         <link rel="stylesheet" href="css/main.css">
 
-        <script src="js/classie.js" async></script>
-        <script>
-            function init() {
-                window.addEventListener('scroll', function(e){
-                    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                        shrinkOn = 50,
-                        header = document.querySelector("header");
-                    if (distanceY > shrinkOn) {
-                        classie.add(header,"smaller");
-                    } else {
-                        if (classie.has(header,"smaller")) {
-                            classie.remove(header,"smaller");
-                        }
-                    }
-                });
-            }
-            window.onload = init();
-        </script>
+
 
     </head>
 
@@ -98,5 +81,26 @@
                </nav>
            </div>
          </footer>
+
+		 <script src="js/classie.js" async></script>
+
+         <script>
+             function init() {
+                 window.addEventListener('scroll', function(e){
+                     var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                         shrinkOn = 50,
+                         header = document.querySelector("header");
+                     if (distanceY > shrinkOn) {
+                         classie.add(header,"smaller");
+                     } else {
+                         if (classie.has(header,"smaller")) {
+                             classie.remove(header,"smaller");
+                         }
+                     }
+                 });
+             }
+             window.onload = init();
+         </script>
+		 
     </body>
 </html>
