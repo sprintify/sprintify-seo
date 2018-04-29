@@ -2,35 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Sprintify site</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta name="description" content="Sprintify develope ultrafast responsive websites for mobile ipads desktop. Pageloadtime less than 2 seconds always in sight. ">
+	<meta name="robots" content="index,follow">
+	<meta name="revisit-after" content="1 days">
+	<meta name="abstract" content="Web development and design on static superspeed platforms">
+	<meta name="language" content="English">
+	<title>Sprintify | site make ultrafast websites below 2 seconds and less</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon-96x96.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:200,400,700">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 	<link rel="stylesheet" href="css/main.css">
-
-	<!-- Speed up fontawesome cause its so slow -->
-	<script type="text/javascript" async> (function() { var css = document.createElement('link'); css.href = '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
-
-	<script src="js/classie.js" async></script>
-	<script>
-		 function init() {
-			  window.addEventListener('scroll', function(e){
-					var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-						 shrinkOn = 50,
-						 header = document.querySelector("header");
-					if (distanceY > shrinkOn) {
-						 classie.add(header,"smaller");
-					} else {
-						 if (classie.has(header,"smaller")) {
-							  classie.remove(header,"smaller");
-						 }
-					}
-			  });
-		 }
-		 window.onload = init();
-	</script>
-
 </head>
 
 
@@ -97,6 +82,29 @@
 	  			</div>
 	  		 </footer>
     </div>
+
+	<!-- Speed up fontawesome cause its so slow -->
+	<script type="text/javascript" async> (function() { var css = document.createElement('link'); css.href = '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+
+	<script src="js/classie.js" async></script>
+	<script>
+		 function init() {
+			  window.addEventListener('scroll', function(e){
+					var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+						 shrinkOn = 50,
+						 header = document.querySelector("header");
+					if (distanceY > shrinkOn) {
+						 classie.add(header,"smaller");
+					} else {
+						 if (classie.has(header,"smaller")) {
+							  classie.remove(header,"smaller");
+						 }
+					}
+			  });
+		 }
+		 window.onload = init();
+	</script>
+
 
 </body>
 </html>
