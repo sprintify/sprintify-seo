@@ -613,7 +613,7 @@ footer {
     padding-top: 15px;
     text-align: left;
     color: #fff;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 24px;
     cursor: pointer;
     width: 400px;
@@ -758,9 +758,20 @@ h2 .fa-paper-plane {
   color: #fa6a39;
 }
 
+.paperplane {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: url("../img/mailmeorange.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
 h1.getstarted-large {
   font-size: 42px;
   text-align: center;
+  padding-top: 25px;
 }
 
 h1.getstarted-large span {
@@ -831,6 +842,7 @@ textarea {
   transtion: all 250ms ease-in-out;
   cursor: pointer;
   margin-bottom: 90px;
+  margin-top: 20px;
 }
 
 .button:hover {
@@ -840,10 +852,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .container-getstarted {
     padding-top: 70px;
-    margin-bottom: 0px;
-  }
-  .container-getstarted h2 .fa-paper-plane {
-    font-size: 3.5vw;
+    margin-bottom: 0;
   }
   .container-getstarted .getstartedhead {
     margin-top: 12vh;

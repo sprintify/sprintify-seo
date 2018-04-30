@@ -34,9 +34,20 @@ h2 .fa-paper-plane
    font-weight: $font-light
    color: $primary
 
+.paperplane
+   display: block
+   width: 70px
+   height: 70px
+   background: url('../img/mailmeorange.svg')
+   background-size: contain
+   background-repeat: no-repeat
+   margin: 0 auto
+
+
 h1.getstarted-large
    font-size: 42px
    text-align: center
+   padding-top: 25px
    span
       color: $primary
 
@@ -89,16 +100,15 @@ textarea
   transtion: all 250ms ease-in-out
   cursor: pointer
   margin-bottom: 90px
+  margin-top: 20px
 
   &:hover
     background-color: $secondary
 
+
 @media screen and (min-width: 768px)
   .container-getstarted
 	  padding-top: 70px
-
-   h2 .fa-paper-plane
-     font-size: 3.5vw
 
    .getstartedhead
       margin-top: 12vh
@@ -111,4 +121,4 @@ textarea
       font-size: 4vw
 
    .button
-	  margin-bottom: 0px
+	  margin-bottom: 0
