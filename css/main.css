@@ -195,8 +195,8 @@ body {
 }
 
 .text-primary {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-size: 17px;
   line-height: 1.6;
   text-align: left;
   font-weight: 400;
@@ -222,7 +222,7 @@ body {
   letter-spacing: -1px;
   font-size: 3.5vw;
   text-align: left;
-  font-weight: 200;
+  font-weight: 400;
   color: #35363e;
 }
 
@@ -230,7 +230,7 @@ body {
   font-family: "Encode Sans Expanded", sans-serif;
   font-size: 80em;
   text-align: left;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: -1px;
   color: #35363e;
   line-height: 1.2;
@@ -412,7 +412,7 @@ header.container-heading {
   letter-spacing: 1px;
   color: #fff;
   height: 50px;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 24px;
   padding: 4px 0 0 20px;
   cursor: pointer;
@@ -483,7 +483,7 @@ header.container-heading {
     height: 100px;
     width: 270px;
     letter-spacing: .2px;
-    font-size: 40px;
+    font-size: 36px;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;
@@ -749,7 +749,7 @@ h2 .fa-paper-plane {
   letter-spacing: -2px;
   font-size: 70px;
   text-align: center;
-  font-weight: 200;
+  font-weight: 400;
   color: #fa6a39;
 }
 
@@ -799,7 +799,7 @@ input, textarea, .button {
   margin-bottom: 15px;
   border: none;
   font-family: "Encode Sans Expanded", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 15px;
 }
 
@@ -848,7 +848,7 @@ textarea {
 }
 
 .container {
-  font: "Open Sans", sans-serif;
+  font: "Encode Sans Expanded", sans-serif;
   background-color: #fff;
   margin-top: 75px;
   padding: 0 20px;
@@ -863,13 +863,9 @@ h1.title-large.color span {
   color: #fa6a39;
 }
 
-.text-primary {
-  font-size: 16px;
-}
-
 @media screen and (min-width: 768px) {
   .container {
-    font: "Open Sans", sans-serif;
+    font: "Encode Sans Expanded", sans-serif;
     background-color: #fff;
     margin-top: 150px;
   }
