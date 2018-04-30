@@ -12,28 +12,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon-96x96.png">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,700">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 		<link rel="stylesheet" href="css/main.css">
-
-        <!-- js -->
-        <script src="js/classie.js" async>></script>
-        <script>
-            function init() {
-                window.addEventListener('scroll', function(e){
-                    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                        shrinkOn = 50,
-                        header = document.querySelector("header");
-                    if (distanceY > shrinkOn) {
-                        classie.add(header,"smaller");
-                    } else {
-                        if (classie.has(header,"smaller")) {
-                            classie.remove(header,"smaller");
-                        }
-                    }
-                });
-            }
-            window.onload = init();
-        </script>
     </head>
 
     <body>
@@ -73,12 +52,33 @@
                   <ul>
                       <li><a href="index.html">About</a></li>
                       <li><a href="news.html">News</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Blog</a></li>
                       <li><a href="getstarted.html">Get started</a></li>
                   </ul>
              </nav>
           </div>
         </footer>
+
+		<!-- js -->
+        <script src="js/classie.js" async>></script>
+        <script>
+            function init() {
+                window.addEventListener('scroll', function(e){
+                    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                        shrinkOn = 50,
+                        header = document.querySelector("header");
+                    if (distanceY > shrinkOn) {
+                        classie.add(header,"smaller");
+                    } else {
+                        if (classie.has(header,"smaller")) {
+                            classie.remove(header,"smaller");
+                        }
+                    }
+                });
+            }
+            window.onload = init();
+        </script>
+
     </body>
 </html>

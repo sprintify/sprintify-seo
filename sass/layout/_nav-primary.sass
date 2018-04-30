@@ -142,6 +142,7 @@ header.container-heading
    ====================================================================== */
 
 @media screen and (min-width: 768px)
+
    header .menu-icon
       display: none
 
@@ -152,7 +153,7 @@ header.container-heading
 
       .logo.heading
          flex: 1 1 auto
-         margin-top: -3px
+         margin-top: -6px
          line-height: 100px
          height: 100px
          width: 270px
@@ -160,7 +161,6 @@ header.container-heading
          font-size: 36px
          transition: all 0.4s
          padding-left: 0
-
 
    .nav-primary
       display: flex
@@ -173,7 +173,7 @@ header.container-heading
       flex: 2 1 auto
       display: flex
       flex-direction: row
-      overflow: visible //Important for hamburger text back
+      overflow: visible
       justify-content: flex-end
       margin-top: -5px
       background-color: transparent
@@ -188,7 +188,7 @@ header.container-heading
       &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
          flex-basis: 70px
       &:nth-child(5)
-         flex-basis: auto
+         flex-basis: 138px
 
    .a-nav-primary
       line-height: 100px
@@ -205,29 +205,30 @@ header.container-heading
          border: 1px solid $white
          padding: 2px  10px 3px 10px
 
+
    .logo.heading
        padding-top: 0
 
 
    header.smaller
-        height: 50px
+        height: 60px
         background-color: $white
         opacity: .97
         box-shadow: 0px 0px 6px rgba($secondary, 0.4)
 
    header.smaller .logo.heading
       width: 190px
-      height: 50px
-      line-height: 50px
+      height: 60px
+      line-height: 60px
       font-size: 24px
-      margin-top: -2px
+      margin-top: -4px
       color: $primary
       span
          color: $primary
 
    header.smaller .a-nav-primary
       margin-top: 0px
-      line-height: 50px
+      line-height: 60px
       color: $primary
       &:hover
          background-color: $white
